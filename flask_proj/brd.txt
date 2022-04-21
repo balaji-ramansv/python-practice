@@ -1,0 +1,13 @@
+Main features of the GMS:
+1) Reportees must be able to set goals.
+    a) A goal label must have categories. E.g. self, team, org. Each category will have goals under them. 
+    b) The goals must be editable before freezing.
+    c) Partially filled goals must be saved.
+    d) Manager must be able to see the goals after it's saved by the reportees.
+    e) After the goals are frozen, only an admin can change from the backend. For all practical purposes from reportees POV, the goals are frozen and uneditable.
+    f) Reportees must be able to give their rating with justification.
+2) Reportees must be able to view past goals, and ratings.
+    a) History should be configurable. How many years of history does the reportee want to see.
+3) Reportees must be able to assign weightage.
+    a) All sub goals put together should not cross 100%.
+4) Managers must be able to view the ratings, provide their rating and provide feedback.
