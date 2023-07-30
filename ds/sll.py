@@ -1,44 +1,26 @@
-class SllNode:
-    def __init__(self, data=None, next=None):
-        self.data = data
-        self.next = next
-    
-    def get_data(self):
-        return self.data
-    
-    def set_data(self, data):
-        self.data = data
-    
-    def get_next(self):
-        return self.next
-    
-    def set_next(self, next):
-        self.next = next
-    
-    def has_next(self):
-        if self.next is not None:
-            return True
-        else:
-            return False
+class Node:
+    def __init__(self, data):
+         self.data = data
+         self.next = None
 
-class Sll(object):
-    def __init__(self, node=None):
-        self.head = node
-        self.length = 0
-
-    def length(self):
-        count = 0
-        current = self.head
-        while current is not None:
-            current += 1
-            current = current.next
-        return count
+class LinkedList:
+    def __init__(self):
+        self.head = None
     
-    def insert_at_beginning(self, data):
-        node = SllNode()
-        node.set_data(data)
-        if self.length == 0:
-            self.head = node
-        else:
-            node.set_next(self.head)
-        self.length += 1
+    def print_linked_list(self):
+        node = self.head
+        print(f"data = {node.data}")
+        next_node = node.next    
+        while next_node is not None:
+            print(f"data = {next_node.data}")
+            next_node = next_node.next
+
+ll = LinkedList()
+ll.head = Node(2)
+second = Node(4)
+third = Node(6)
+
+ll.head.next = second
+second.next = third
+
+ll.print_linked_list()
